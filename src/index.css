@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+@theme {
+  /* Breakpoints */
+  --breakpoint-sm: 640px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+  --breakpoint-2xl: 1536px;
+
+  /* Colors */
+  --color-primary: #fe6b7e;
+  --color-brand-white: #f5f9fc;
+  --color-dark-blue: #171a67;
+
+  /* Fonts */
+  --font-poppins: "Poppins", sans-serif;
+
+  /* Container paddings */
+  --container-padding: 1rem;
+  --container-padding-sm: 2rem;
+  --container-padding-lg: 4rem;
+  --container-padding-xl: 5rem;
+  --container-padding-2xl: 6rem;
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    margin-inline: auto;
+    padding-inline: var(--container-padding);
+  }
+
+  @media (min-width: 640px) {
+    .container {
+      padding-inline: var(--container-padding-sm);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container {
+      padding-inline: var(--container-padding-lg);
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .container {
+      padding-inline: var(--container-padding-xl);
+    }
+  }
+
+  @media (min-width: 1536px) {
+    .container {
+      padding-inline: var(--container-padding-2xl);
+    }
+  }
+}
