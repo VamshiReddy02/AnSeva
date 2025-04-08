@@ -14,7 +14,7 @@ const Hero = () => {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, quidem iusto ullam et consequatur architecto!
             </p>
             <div className='bg-primary text-white px-6 py-4 rounded-lg mt-4 w-fit mx-auto md:mx-0 font-bold hover:shadow-lg duration-100'>
-                <button>Learn more</button>
+                <button>Learn moreee</button>
             </div>
         </div>
         </div>
